@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Login GoUMKM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css.css">
+        <link rel="icon" type="image/png" href="logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <div class="main">
+            <div class="form">
+                <div class="button">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle" onclick="login()">Log In</button>
+                    <button type="button" class="toggle" onclick="signup()">Sign Up</button>
+                </div>
+                <div class="logo">
+                    <img src="t.png">
+                    <img src="f.png">
+                    <img src="g.png">
+                </div>
+
+                <form id="login" class="input">
+                    <input type="text" class="inputfield" placeholder="Username" required>
+                    <input type="password" class="inputfield" placeholder="Password" required="" id="pass" >
+                    <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                    <button type="submit" class="submit">Login</button>
+                </form>
+                <form id="signup" class="input">
+                   
+                    <input type="text" class="inputfield" placeholder="Enter Username" required>
+                    <input type="email" class="inputfield" placeholder="Enter Email" required>
+                    <input type="password" class="inputfield" placeholder="Enter Password" required="" id="passs">
+                    <input type="checkbox" class="checkbox"><span>Setuju dengan ketentuan</span>
+                    <button type="submit" class="submit">Sign Up</button>
+                </form>
+            </div>
+
+        </div>
+        <script>
+            var log = document.getElementById("login");
+            var sign = document.getElementById("signup");
+            var button = document.getElementById("btn");
+
+
+            function signup() {
+                log.style.left = "-400px";
+                sign.style.left = "50px";
+                button.style.left = "110px";
+            }
+            function login() {
+                log.style.left = "50px";
+                sign.style.left = "450px";
+                button.style.left = "0";
+            }
+
+
+
+        </script>
+    </body>
+</html> 
